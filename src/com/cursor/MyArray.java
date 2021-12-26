@@ -21,7 +21,6 @@ public class MyArray {
     public void randomNumber() {
         System.out.print("\n task 2: Заповнити масив рандомними числами\n");
         Random random = new Random();
-        int array[] = new int[5];
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(1000);
             System.out.println(array[i]);
@@ -30,12 +29,12 @@ public class MyArray {
 
     public void averageValueArray() {
         System.out.print("\n task 3: Вивести середнє значення масиву\n");
-        int array[] = {-51, -9, 1, 18, 107, -19, 25, 4};
         double sum = 0;
         for (int i : array)
             sum += i;
         System.out.println("середнє значення: " + sum / array.length);
     }
+
 
     public void sumValues() {
         System.out.print("\n task 4: Вивести суму всіх значень кратних 3\n");
@@ -47,7 +46,6 @@ public class MyArray {
 
     public void evenValuesArray() {
         System.out.print("\n task 5: Вивести значення всіх парних індексів масиву\n");
-        int[] array = new int[]{52, 45, 32, 7, 64, 12, 87, 78, 98, 23};
         for (int i = 0; i < array.length; i++) {
             if (i % 2 == 0) {
                 System.out.println(array[i]);
@@ -57,7 +55,6 @@ public class MyArray {
 
     public void growingArray() {
         System.out.print("\n task 6: Просортувати масив в порядку зростання\n");
-        int[] array = new int[]{52, 45, 32, 7, 64, 12, 87, 78, 98, 23};
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = 0; j < array.length - i - 1; j++) {
                 if (array[j] > array[j + 1]) {
@@ -72,7 +69,6 @@ public class MyArray {
 
     public void minNumber() {
         System.out.print("\n task 7: Вивести найменше значення в масиві\n");
-        int[] array = new int[]{52, 45, 32, 7, 64, 12, 87, 78, 98, 23};
         int min = array[0];
         for (int num : array) {
             if (num < min) {
@@ -84,7 +80,6 @@ public class MyArray {
 
     public void maxNamber() {
         System.out.print("\n task 8: Вивести найбільше значення масиву\n");
-        int[] array = new int[]{52, 45, 32, 7, 64, 12, 87, 78, 98, 23};
         int max = array[0];
         for (int num : array) {
             if (num > max) {
@@ -96,7 +91,6 @@ public class MyArray {
 
     public void sumPairedIndices() {
         System.out.print("\n task 9: Вивести суму значень всіх парних індексів\n");
-        int[] array = new int[]{52, 45, 32, 7, 64, 12, 87, 78, 98, 23};
         int sum_parn = 0;
         for (int i = 0; i < array.length; i++) {
             if (i % 2 == 0) {
